@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="eval.js" defer></script>
+</head>
+<body>
+    <h1>Tirage</h1>
+
+    <form method="post">
+        <label for="nom">Nom</label>
+        <input type="text" id="nom" name="nom" placeholder="nom" autofocus>
+        <label for="prenom">Prenom</label>
+        <input type="text" id="prenom" name="prenom" placeholder="prenom" autofocus>
+        <button type="submit" id="submit">+</button>
+    </form>
+    <!-- <input type="checkbox"> -->
+    <error id="erreur" style="color : red; display : none;" >Veuiller rentre un étudiant </error>
+
+    <p><span id = "msg">Pas d'étudiant dans la liste </span><span id="student_nuber"></span></p>
+    <p><span id = "msg_random">Tout les Etudiant de la list on été tirer</span><span id="random_nuber"></span></p>
+
+    <ul id="students" style="content:flex;">
+
+    </ul>
+    <button id="supp">Vider liste</button>
+    <button id="tirage">Tirer</button>
+    <button id="reset">Reset</button>
+</body>
+</html>
